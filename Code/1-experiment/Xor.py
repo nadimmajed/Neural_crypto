@@ -58,17 +58,4 @@ if __name__ =='__main__' :
         
         
         
-        datasets = make_idx_data_cv(revs, word_idx_map, 
-                        i, max_l=56,k=300, filter_h=5)
-        perf = train_conv_net(datasets,
-                              U,
-                              lr_decay=0.95,
-                              filter_hs=[3,4,5],
-                              conv_non_linear="relu",
-                              hidden_units=[100,2], 
-                              shuffle_batch=True, 
-                              n_epochs=25, 
-                              sqr_norm_lim=9,
-                              non_static=non_static,
-                              batch_size=50,
-                              dropout_rate=[0.5])
+
